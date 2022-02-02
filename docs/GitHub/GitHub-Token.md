@@ -19,6 +19,10 @@ nav_order: 3
 ---
 
 ## GitHub token 저장하기 
-![img]({{"/assets/images/GitHub-token-setting.png"| relative_url}})  
-
+코드가 있는 local 폴더에서 .git 의 config파일을 열어서 다음과 같이 수정  
+숨은 파일 보이게 하는 단축 키 : command + shift + .
+```
+[remote "origin"] 부분의 url을
+url = https://<user-id>:<token>@github.com/~/~.git
+```
 
