@@ -5,7 +5,7 @@ parent: GitHub
 nav_order: 1
 ---
 
-# Typography
+# GitHub Page 시작하기
 {: .no_toc }
 
 ## Table of contents
@@ -14,7 +14,8 @@ nav_order: 1
 1. TOC
 {:toc}
 ---
-https://zeddios.tistory.com/1222
+[참조1 link](https://zeddios.tistory.com/1222)
+
 ---
 
 ## GitHub page 용 GitHub Repository 생성
@@ -37,7 +38,8 @@ git add --all
 git commit -m "Initial commit" 
 git push -u origin main
 ```
-확인 https://bysandychoi.github.io
+확인 
+[https://bysandychoi.github.io](https://bysandychoi.github.io)
 
 ---
 ## Jekyll 설치
@@ -58,6 +60,43 @@ Jekyll을 로컬서버에 띄우기
 ```
 bundle exec jekyll serve
 ```
+![img]({{"/assets/images/jekyll-serve.png"| relative_url}})
+
+원격에 git push
+```
+git add . 
+git commit -m "본인의 커밋 메세지" 
 git push
+```
+---
+## 테마 선택
+ 아래에서 사용하고자 하는 테마 선택
+ - [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
+ - [jekyllthemes.org](http://jekyllthemes.org/)
+ - [jekyllthemes.io](https://jekyllthemes.io/)
+ - [jekyll-themes.com](https://jekyll-themes.com/)
 
 ---
+## 테마 적용
+선택한 테마 링크로 이동  
+[just-the-docs](https://github.com/pmarsceill/just-the-docs)  
+
+우측의 code를 클릭 후 download zip 클릭  
+![img]({{"/assets/images/download-theme.png"| relative_url}})  
+다운받은 폴더 열어 전체 복사 후 내 github.io 폴더에 붙혀넣기, 모두 대치로 붙이기 
+
+터미널에 bundle install 입력 (sudo 붙이고 실행하기)
+```
+bundle install
+```  
+serve 재 가동 (sudo 붙이고 실행하기)
+```
+bundle exec jekyll serve
+```  
+
+원격에 push
+```
+git add . 
+git commit -m "본인의 커밋 메세지" 
+git push
+```
